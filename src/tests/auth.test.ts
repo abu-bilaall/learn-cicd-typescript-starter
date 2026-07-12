@@ -7,7 +7,7 @@ describe("getAPIKey", () => {
       authorization: "ApiKey IXYSD23",
     };
 
-    expect(getAPIKey(headers)).toBe("IXYSD23-break");
+    expect(getAPIKey(headers)).toBe("IXYSD23");
   });
 
   test("returns null when the authorization header is missing", () => {
